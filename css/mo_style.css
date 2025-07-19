@@ -1,0 +1,193 @@
+.pc,
+.tb {
+  display: none;
+}
+.mo {
+  display: block;
+}
+
+.inner {
+  width: 100%;
+  margin: auto;
+}
+.main_Visual {
+  position: relative;
+}
+
+.main_Visual div {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  color: #fff;
+}
+
+.mtitle {
+  font-size: 3.8rem;
+}
+.mtitle2 {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+.brand_btn {
+  display: block;
+  width: 22.4rem;
+  height: 4rem;
+  line-height: 38px;
+  border: 1px solid rgb(255 255 255 / 25%);
+  border-radius: 20px;
+  padding: 0 16px;
+}
+
+/*preoduct*/
+
+.goods {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.goods > div {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.goods div img {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+/*news*/
+.news {
+  padding: 60px 14px;
+}
+.news h3 {
+  font-size: 2.8rem;
+  text-align: center;
+  line-height: 3.8rem;
+  font-weight: 600;
+}
+.scotitle {
+  font-size: 1.4rem;
+  padding: 15 0 50px;
+  text-align: center;
+}
+.headline {
+  height: 408px;
+  gap: 14px;
+}
+.headline > li {
+  position: static;
+  width: 298px;
+  height: 356px;
+}
+.ctimg {
+  height: 130px;
+  overflow: hidden;
+}
+.ctimg img {
+  overflow: hidden;
+}
+
+.headline li a:hover .content {
+  position: none;
+  box-shadow: none;
+}
+.headline li a:hover .ctimg img {
+  transform: scale(1.1);
+}
+.headline li:hover {
+  box-shadow: 2px 2px 20px #a3a0a0;
+}
+.content {
+  position: static;
+  bottom: 0px;
+  width: 100%;
+  height: 216px;
+  padding: 24px;
+  background: #fff;
+  transition: all 0.2s;
+  letter-spacing: -1.6px;
+  white-space: wrap;
+}
+
+.content h3 {
+  height: 6rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  text-align: left;
+}
+
+#container {
+  width: 100%;
+  height: 408px;
+  aspect-ratio: 2/1;
+  margin: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+.newsBtn a {
+  width: 440px;
+  padding: 0 30px;
+  line-height: 46px;
+  text-align: center;
+  margin-top: 30px;
+}
+.newsBtn {
+  margin: 0;
+  align-items: center;
+}
+
+/*qna*/
+.qna {
+  padding: 80px 10px 0 10px;
+}
+.qna div {
+  flex-direction: column;
+  gap: 10px;
+}
+.qna section {
+  width: 100%;
+}
+
+.qna section h3 {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+.qna section p {
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+}
+
+/*footer*/
+footer {
+  padding: 0;
+  height: 358px;
+  position: relative;
+  text-align: left;
+}
+
+footer div {
+  position: static;
+  padding: 40px 50px;
+}
+
+address span:after {
+  position: static;
+}
+
+address strong {
+  font-size: 12px;
+  color: #aaa;
+  width: 440px;
+}
+.moorim {
+  font-size: 12px;
+  transform: translateX(-50%);
+  width: 440px;
+}

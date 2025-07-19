@@ -1,0 +1,414 @@
+@charset "utf-8";
+@font-face {
+  font-family: "notosansKR";
+  src: url(../font/NotoSansKR-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: "lexend";
+  src: url(../font/Lexend-VariableFont_wght.ttf) format("truetype");
+}
+
+html,
+body {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "notosansKR";
+  font-size: 1.5rem;
+  color: #222;
+}
+.pc {
+  display: block;
+}
+.tb,
+.mo {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+.inner {
+  width: 1440px;
+  margin: auto;
+}
+
+.header {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 8rem;
+  width: 100%;
+  height: 10rem;
+  color: #ffffffcc;
+}
+.fixed {
+  position: fixed;
+  width: 100%;
+  height: 10rem;
+  background: #fff;
+  color: #666;
+}
+
+.header:hover {
+  background: #fff;
+}
+header:hover .logo {
+  background: url(../images/main_logo_color.png);
+}
+header:hover .gnb {
+  color: #666;
+}
+header:hover .util {
+  color: #c3c3c3;
+}
+/*로고*/
+.c_logo {
+  display: none;
+}
+.block {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.header:hover .c_logo {
+  display: block;
+}
+.header:hover .w_logo {
+  display: none;
+}
+.mlogo {
+  background: url(../images/main_logo.png) 50% 50%;
+  background-size: 15.2rem 3.6rem;
+}
+.gnb {
+  justify-content: space-between;
+  height: 10rem;
+  font-weight: 500;
+  /*overflow: hidden;*/
+}
+.gnb li {
+  width: 13.5rem;
+}
+.gnb > li > a {
+  display: block;
+  width: 13.5rem;
+  height: 10rem;
+  line-height: 10rem;
+}
+.submenu {
+  display: none;
+}
+
+.util {
+  height: 100%;
+  align-items: center;
+}
+.util a {
+  display: block;
+  width: 8rem;
+  height: 5rem;
+  line-height: 5rem;
+}
+.main_Visual {
+  width: 100%;
+  height: 100vh;
+  margin-top: -10rem;
+  background: url(../images/bg1.jpg) no-repeat;
+  background-size: cover;
+}
+.main_Visual > div {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  color: #fff;
+}
+
+.mtitle {
+  font-size: 60px;
+  font-weight: bold;
+}
+.mtitle2 {
+  font-size: 22px;
+  margin: 20px 0 50px;
+}
+.brand_btn {
+  display: block;
+  width: 224px;
+  height: 40px;
+  line-height: 38px;
+  border: 1px solid rgb(255 255 255 / 25%);
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.brand_btn:hover {
+  background: rgb(29, 203, 93);
+  border: 0;
+}
+/*product*/
+.product {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 160px;
+  letter-spacing: -1.6px;
+}
+.product > div {
+  z-index: 100;
+  position: absolute;
+  top: 11.4rem;
+  left: 8rem;
+}
+h3 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 5.6rem;
+}
+.product > div p {
+  font-size: 1.8rem;
+  margin-top: 3rem;
+}
+.goods {
+  width: 100%;
+}
+.goods > div {
+  position: relative;
+  width: 33.333%;
+}
+.goods div img {
+  width: 100%;
+  height: 100%;
+}
+.p_Btn {
+  position: absolute;
+  right: 5rem;
+  bottom: 5rem;
+  height: 3.2rem;
+  padding: 0 15px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  border: 1px solid #646464;
+  border-radius: 16px;
+  transition: all 0.3s;
+}
+.p_Btn:hover {
+  background: #222;
+  color: #fff;
+}
+/*news*/
+
+.scotitle {
+  padding: 0 0 50px 20px;
+}
+.headline {
+  width: 100%;
+  height: 408px;
+  justify-content: space-between;
+}
+.headline > li {
+  position: relative;
+  width: 32.3%;
+  height: 406px;
+  flex-shrink: 0;
+  border: 1px solid #eeee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.headline > li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+.ctimg {
+  width: 100%;
+  height: 236px;
+}
+.ctimg img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+
+.headline li a:hover .content {
+  bottom: 0;
+  box-shadow: 2px 2px 2px #999;
+}
+.headline li a:hover .ctimg img {
+  transform: scale(1.1);
+}
+.headline li:hover {
+  box-shadow: 2px 2px 20px #a3a0a0;
+}
+.content {
+  position: absolute;
+  bottom: -84px;
+  width: 100%;
+  height: 216px;
+  padding: 24px;
+  background: #fff;
+  transition: all 0.2s;
+  letter-spacing: -1.6px;
+}
+
+.content h3 {
+  height: 6rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+.content span {
+  display: block;
+  color: #999;
+  padding: 2rem 0;
+}
+
+.content small {
+  display: block;
+  font-size: 1.4rem;
+  color: #999;
+}
+.newsBtn {
+  justify-content: center;
+}
+
+.newsBtn a {
+  display: inline-block;
+  margin-top: 50px;
+  height: 60px;
+  padding: 0 48px;
+  border: 1px solid #646464;
+  border-radius: 30px;
+  line-height: 58px;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+.newsBtn a:hover {
+  background: #222;
+  border-color: #222;
+  color: #fff;
+}
+/*qna*/
+.qna {
+  margin: auto;
+  color: #fff;
+  padding: 50px 0 60px;
+}
+.qna div {
+  justify-content: space-between;
+  gap: 20px;
+}
+.qna section {
+  position: relative;
+  width: 49.027%;
+  height: 140px;
+}
+.qna section a {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  padding: 45px 25px;
+}
+.qna section h3 {
+  font-size: 2rem;
+  line-height: 2rem;
+  padding-bottom: 1.5rem;
+}
+.qna section p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+.online a {
+  background: url(../images/bg_contact.jpg);
+}
+.cs a {
+  background: url(../images/bg_charge.jpg);
+}
+.qnaBtn {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 106px;
+  height: 34px;
+  background: #222;
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 9px;
+  transition: all 0.3s;
+}
+.qnaBtn:hover {
+  background: rgb(29, 203, 93);
+}
+.qna .qnaBtn {
+  display: block;
+}
+/*footer*/
+footer {
+  width: 100%;
+  background: #f5f5f5;
+  color: #ababab;
+  font-size: 1.2rem;
+  letter-spacing: -1.6px;
+}
+footer div {
+  padding: 50px 0 80px;
+  position: relative;
+}
+.left {
+  width: 444px;
+}
+.flogo {
+  margin-bottom: 20px;
+}
+address {
+  position: relative;
+}
+address span {
+  position: relative;
+  padding-right: 20px;
+}
+address span:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 1px;
+  height: 1.2rem;
+  background-color: #cacaca;
+}
+address strong {
+  position: absolute;
+  left: 366px;
+  top: 0;
+  font-weight: 600;
+  color: #999;
+}
+.moorim {
+  position: absolute;
+  display: block;
+  width: 158px;
+  height: 36px;
+  font-size: 1.3rem;
+  line-height: 3.6rem;
+  border-radius: 20px;
+  background: #cacaca;
+  color: #fff;
+  right: 0;
+  top: 60px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.moorim:hover {
+  background: #9b9b9b;
+}

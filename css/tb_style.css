@@ -1,0 +1,192 @@
+@charset "utf-8";
+@font-face {
+  font-family: "notosansKR";
+  src: url(../font/NotoSansKR-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: "lexend";
+  src: url(../font/Lexend-VariableFont_wght.ttf) format("truetype");
+}
+
+.pc,
+.mo {
+  display: none;
+}
+.tb {
+  display: block;
+}
+.inner {
+  width: calc(100% - 19.2rem);
+}
+
+.header {
+  height: 7.2rem;
+  padding: 0 2rem;
+}
+.header:hover {
+  background: none;
+}
+.header:hover .logo {
+  background: none;
+}
+.header:hover .gnb {
+  color: none;
+}
+
+.header:hover .c_logo {
+  display: none;
+}
+.header:hover .w_logo {
+  display: block;
+}
+@keyframes shrink-header {
+  to {
+    height: 7.2rem;
+    background: #fff;
+    color: #222;
+    border-bottom: 1px solid #222;
+  }
+}
+.btn_gnb,
+.btn_gnb::after,
+.btn_gnb::before {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background: #f2f2f1;
+  cursor: pointer;
+}
+.gnb_B {
+  width: 24px;
+  height: 16px;
+}
+.btn_gnb {
+  position: relative;
+  right: 20px;
+  top: 10px;
+}
+.btn_gnb::before {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+}
+.btn_gnb::after {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+.main_Visual {
+  position: relative;
+}
+
+/*product*/
+.product {
+  letter-spacing: -1.4px;
+}
+.product > div {
+  top: 4.6rem;
+  left: 2rem;
+}
+.product > div h3 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 4.48rem;
+}
+.product > div p {
+  width: 18rem;
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  line-height: 1.79rem;
+}
+/*news*/
+
+.scotitle {
+  font-size: 1.8rem;
+}
+
+.newsBtn a {
+  width: 728px;
+  height: 48px;
+  padding: 0 30px;
+  line-height: 46px;
+  text-align: center;
+}
+
+/*qna*/
+
+.qna section h3 {
+  font-size: 2rem;
+  line-height: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.qnaBtn {
+  width: 126px;
+  height: 32px;
+}
+.qna section .qnaBtn {
+  font-size: 14px;
+}
+/*footer*/
+footer {
+  height: 358px;
+  position: relative;
+  padding-top: 30px;
+}
+
+footer div {
+  position: static;
+  padding: 40px 172px;
+}
+
+.flogo img {
+  width: 139px;
+  height: 33px;
+}
+address {
+  position: static; /*개인정보처리방침*/
+}
+address span:first-child {
+  display: block;
+  margin-bottom: 5px;
+}
+
+address span:after {
+  position: static;
+}
+address span:nth-child(2)::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  right: 10px;
+  width: 1px;
+  height: 1.2rem;
+  background-color: #cacaca;
+}
+address strong {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 188px;
+  font-size: 13px;
+  color: #aaa;
+  width: 480px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  text-align: center;
+  line-height: 40px;
+}
+.moorim {
+  left: 50%;
+  transform: translateX(-50%);
+  top: 238px;
+  width: 480px;
+  height: 40px;
+  line-height: 4rem;
+}
+
+.copy {
+  position: absolute;
+  bottom: 40px;
+  padding-top: 26px;
+}
